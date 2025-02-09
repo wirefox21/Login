@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.thymeleaf.org">
+  <head>
+    <title>LoginScreen</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <form th:action="@{/wirefox/postLogin}" method="post" th:object="${form}">
+       <label for="username">USERNAME : </label>
+       <input type="text" id="username" name="username" th:field="*{username}">
+       <br>
+       <label for="password">PASSWORD :</label>
+       <input type="password" id="password" name="password" th:field="*{password}">
+       <br>
+       <input type="submit" value="LOGIN">
+    </form>
+   
+  </body>
+</html>
