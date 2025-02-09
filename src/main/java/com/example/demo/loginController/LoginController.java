@@ -23,6 +23,7 @@ public class LoginController {
 	public String create(@ModelAttribute LoginForm form) {
 		System.out.println(form.getUsername());
 		System.out.println(form.getPassword());
+		System.out.println(form.getPassword());
 		return "redirect:/wirefox/login";
 	}
 
